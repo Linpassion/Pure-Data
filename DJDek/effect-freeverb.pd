@@ -1,0 +1,29 @@
+#N canvas 895 215 486 457 12;
+#X obj 112 153 vsl 20 80 0 0.5 0 0 empty empty Wet 0 -9 0 12 -204800
+-1 -1 0 1;
+#X msg 93 263 wet \$1;
+#X obj 147 153 vsl 20 80 0 0.5 0 0 empty empty Dry 0 -9 0 12 -262130
+-1 -1 0 1;
+#X msg 153 262 dry \$1;
+#X obj 175 153 vsl 20 80 0 0.5 0 0 empty empty Roomsize 0 -9 0 12 -232576
+-1 -1 0 1;
+#X msg 213 264 roomsize \$1;
+#X text 108 106 Effect;
+#X obj 110 388 outlet~;
+#X obj 212 383 outlet~;
+#X obj 32 290 inlet~;
+#X obj 184 297 inlet~;
+#X obj 98 325 freeverb~;
+#X text 20 14 Freeverb effect. Requirement: external Freeverb~. Install:
+Help -> find externals -> freeverb~ -> select last package;
+#X connect 0 0 1 0;
+#X connect 1 0 11 0;
+#X connect 2 0 3 0;
+#X connect 3 0 11 0;
+#X connect 4 0 5 0;
+#X connect 5 0 11 0;
+#X connect 9 0 11 0;
+#X connect 10 0 11 1;
+#X connect 11 0 7 0;
+#X connect 11 1 8 0;
+#X coords 0 -1 1 1 140 140 2 100 100;

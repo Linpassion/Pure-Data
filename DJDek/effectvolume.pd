@@ -1,0 +1,11 @@
+#N canvas 457 277 556 488 12;
+#X obj 127 125 vsl 20 80 0 1 0 0 empty empty Effect_volume 0 -9 0 10
+-204786 -1 -1 3900 1;
+#X obj 147 256 pack f 5;
+#X obj 152 288 line~;
+#X obj 149 331 outlet~;
+#X text 26 16 Effect volume;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X coords 0 -1 1 1 120 120 2 100 100;
