@@ -1,0 +1,11 @@
+#N canvas 796 242 556 488 12;
+#X text 26 16 Master volume;
+#X obj 138 243 pack f 5;
+#X obj 147 289 line~;
+#X obj 148 309 outlet~;
+#X obj 131 117 vsl 20 90 0 1 0 0 empty empty Master_volume 0 -9 0 10
+-232576 -1 -1 3600 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 1 0;
+#X coords 0 -1 1 1 120 120 2 100 100;

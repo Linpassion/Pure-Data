@@ -1,0 +1,7 @@
+#N canvas 488 309 602 260 12;
+#X obj 38 134 tgl 20 0 empty empty On/Off 0 -10 0 12 #00ff04 #000000 #000000 0 1;
+#X msg 40 182 \; pd dsp \$1 \;;
+#X text 80 135 <-- to each click you can tourn on/off DSP.;
+#X text 31 30 dsponoff v. 0.5. No externl need. To use copy this patch on current project directory \, than Put -> Object -> dsponoff. This patch contain a Graph-On-Parent container that you can disable., f 71;
+#X connect 0 0 1 0;
+#X coords 0 260 1 259 85 60 0;
